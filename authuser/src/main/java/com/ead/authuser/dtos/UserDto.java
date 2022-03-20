@@ -5,11 +5,10 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonView;
 import lombok.Data;
 
-import java.util.UUID;
-
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
+import java.util.UUID;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -22,7 +21,7 @@ public class UserDto {
         public static interface ImagePut {}
     }
 
-    private UUID userId;
+    //private UUID userId;
 
     @NotBlank(groups = UserView.RegistrationPost.class)
     @Size (min = 4, max = 50, groups = UserView.RegistrationPost.class)
@@ -47,8 +46,10 @@ public class UserDto {
 
     @JsonView({UserView.RegistrationPost.class, UserView.UserPut.class})
     private String fullName;
+
     @JsonView({UserView.RegistrationPost.class, UserView.UserPut.class})
     private String phoneNumber;
+
     @JsonView({UserView.RegistrationPost.class})
     private String cpf;
     
