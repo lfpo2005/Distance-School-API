@@ -18,8 +18,8 @@ and best practices using the ISO 8601 UTC standard. </p>
 
 - [x] Authuser
 - [x] Course
-- [x] Security
 - [x] Notification
+- [ ] Security
 - [ ] Deploy
 - [ ] FrontEnd
 
