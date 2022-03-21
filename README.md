@@ -34,7 +34,7 @@ The following tools were used in the construction of the project:
 <p>* Spring Security </p>
 <p>* Spring Security </p>
 <p>* DTO with JsonView - Multiple Views in APIs </p>
-<p>* Advanced filters with Specification </p>
+<p>* Hypermedia com Spring Hateoas </p>
 <p>* JPA </p>
 <p>* Java 11</p>
 <p>* Postgresql</p>
