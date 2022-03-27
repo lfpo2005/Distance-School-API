@@ -32,7 +32,6 @@ The following tools were used in the construction of the project:
 <p>* Spring Web</p>
 <p>* Spring Validation </p>
 <p>* Spring Security </p>
-<p>* Spring Security </p>
 <p>* DTO with JsonView - Multiple Views in APIs </p>
 <p>* Hypermedia com Spring Hateoas </p>
 <p>* JPA </p>
