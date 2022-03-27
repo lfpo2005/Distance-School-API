@@ -35,7 +35,6 @@ public class UserController {
     													Pageable pageable){
     	
         Page<UserModel> userModelPage = userService.findAll(pageable);
-
         if(!userModelPage.isEmpty()){
             for (UserModel user : userModelPage.toList()){
                 user.add(linkTo(methodOn(UserController.class).getOneUser(user.getUserId())).withSelfRel());

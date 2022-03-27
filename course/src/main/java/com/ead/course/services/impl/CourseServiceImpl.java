@@ -22,17 +22,14 @@ public class CourseServiceImpl implements CourseService{
 	
 	@Autowired
 	CourseRepository courseRepository;
-	
 	@Autowired
 	ModuleRepository moduleRepository;
-	
 	@Autowired
 	LessonRepository lessonRepository;
 	
 	@Transactional
 	@Override
 	public void delete(CourseModel courseModel) {
-
 		List<ModuleModel> moduleModelList = moduleRepository.findAllModulesIntoCourse(courseModel.getCourseId());
 		if(!moduleModelList.isEmpty()) {
 			for(ModuleModel module : moduleModelList) {
