@@ -3,7 +3,7 @@ package com.ead.authuser.services.impl;
 import com.ead.authuser.models.UserModel;
 import com.ead.authuser.repositories.UserRepository;
 import com.ead.authuser.services.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
@@ -14,10 +14,11 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Service
+@RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
 
-    @Autowired
-    UserRepository userRepository;
+
+   private final UserRepository userRepository;
 
     @Override
     public List<UserModel> findAll() {
@@ -50,9 +51,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Page<UserModel> findAll(Pageable pageable) {
-        return userRepository.findAll(pageable);
+    public Page<UserModel> findAll(Specification<UserModel> spec, Pageable pageable) {
+        return userRepository.findAll(spec, pageable);
     }
-
 
 }
