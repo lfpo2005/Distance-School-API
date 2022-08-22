@@ -1,0 +1,10 @@
+{
+  "headers": {
+    "Accept-Encoding": "gzip,deflate",
+    "Authorization": "Bearer my-secret-token",
+    "Cookie": "fake=fake_value; last_nonce=8945893cb989f1a877a381b357922cde; stale_after=never",
+    "Host": "httpbin.org",
+    "User-Agent": "Apache-HttpClient/4.5.13 (Java/11.0.13)",
+    "X-Amzn-Trace-Id": "Root=1-6240aa55-4aa600a26fe1140c43d82d09"
+  }
+}

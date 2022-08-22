@@ -8,14 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="EAD" />
-        <module name="course" />
         <module name="notification" />
+        <module name="course" />
         <module name="authuser" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="authuser" target="11" />
-      <module name="course" target="11" />
+      <module name="authuser" target="17" />
+      <module name="course" target="17" />
       <module name="EAD" target="1.5" />
       <module name="notification" target="11" />
     </bytecodeTargetLevel>
