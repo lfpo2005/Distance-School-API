@@ -4,32 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d44d55c-77cd-4f4d-97d5-901912c415f7" name="Changes" comment="Mapping Relationships to Communication Between Microservices">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_08_2022_10_28_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_08_2022_10_28__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/284f99adbb9c55e68464e76dcf5e45e194cacaa8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/37154f3283b869a60ae457bcd48a192478b3c450" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/371cd057dcfb6bb76b920460917765bb98f8d608" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/371cd057dcfb6bb76b920460917765bb98f8d608" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/4/8481fb8d2599b6b87c0cc5f83756aaf591425f18" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e58566fae79f6bd912585456d7d1530c65230e5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a6471238067fd7d76ea8556fc2f232a65040f017" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a91198bd8e0b5e0c67f93b98abed9ef85fdb53b4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c16964810fb8006314858f81d5f80ca4c5386c3a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d9a3563bb0f56b5f238a527b9ecdbe1729b85ccb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0b88759fc499346c65720aacb17a9c2f2f4001e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="0d44d55c-77cd-4f4d-97d5-901912c415f7" name="Changes" comment="Prepare GetAll Methods">
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/clients/UserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/configs/RestTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserCourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/CourseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/ResponsePageDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/enums/CourseLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/enums/CourseStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/UtilsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UtilsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/configs/ResolverConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/configs/ResolverConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/specifications/SpecificationTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/specifications/SpecificationTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/course/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/models/CourseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/models/CourseModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/CourseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/specifications/SpecificationTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/specifications/SpecificationTemplate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +68,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" environment="test" />
+  </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
@@ -117,38 +106,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "TODO_SCOPE": "All Places",
-    "WebServerToolWindowFactoryState": "false",
-    "extract.method.default.visibility": "private",
-    "last_opened_file_path": "D:/pizzaria",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "2f57c6125b3e8092a27b87f6f0ea9d6f"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/WORKSPACE/EAD/authuser/src/main/java/com/ead/authuser/enums&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;2f57c6125b3e8092a27b87f6f0ea9d6f&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORKSPACE\EAD\authuser\src\main\java\com\ead\authuser\enums" />
       <recent name="D:\WORKSPACE\EAD\course\src\main\java\com\ead\course" />
       <recent name="D:\WORKSPACE\EAD\authuser\src\main\java\com\ead\authuser" />
       <recent name="D:\WORKSPACE\EAD\authuser\src\main\java\com\ead\" />
       <recent name="D:\WORKSPACE\EAD\authuser\src\main\java\com\ead\authuser\configs" />
-      <recent name="D:\eclipse-workspace\EAD\course\src\main\java\com\ead\course" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\WORKSPACE\EAD\authuser\src\main\java\com\ead\authuser\models" />
@@ -177,7 +166,7 @@
     </option>
     <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.CourseApplication (1)">
+  <component name="RunManager" selected="Spring Boot.AuthuserApplication">
     <configuration name="AuthuserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="authuser" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ead.authuser.AuthuserApplication" />
@@ -191,25 +180,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="CourseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="course" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ead.course.CourseApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ead.course.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CourseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="course" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ead.CourseApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ead.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -245,30 +221,13 @@
       <option name="specificationPath" value="D:\WORKSPACE\EAD\course\src\main\java\com\ead\course\controllers\cor.json" />
       <method v="2" />
     </configuration>
-    <configuration name="course.json" type="SwaggerCodegen">
-      <option name="activeConfigurationType" value="FILE" />
-      <option name="configurationPath" value="" />
-      <option name="customJreEnabled" value="false" />
-      <option name="customTemplatesPath" value="" />
-      <option name="enableDebugLogging" value="false" />
-      <option name="generateToPath" value="D:\WORKSPACE\EAD\gen" />
-      <option name="generationParameters">
-        <list>
-          <CliArgumentViewModel>
-            <option name="name" value="" />
-            <option name="value" />
-          </CliArgumentViewModel>
-        </list>
-      </option>
-      <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
-      <option name="jdkPath" value="Default" />
-      <option name="language" value="java" />
-      <option name="specificationPath" value="D:\WORKSPACE\EAD\course\src\main\java\com\ead\course\controllers\cor.json" />
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.NotificationApplication" />
+      <item itemvalue="Spring Boot.CourseApplication" />
+      <item itemvalue="Spring Boot.AuthuserApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CourseApplication (1)" />
         <item itemvalue="Spring Boot.AuthuserApplication" />
         <item itemvalue="Spring Boot.CourseApplication" />
       </list>
@@ -276,7 +235,11 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringBeansView">
+    <option name="showGraph" value="false" />
     <option name="beanDetailsProportion" value="0.3" />
+  </component>
+  <component name="SpringMvcView">
+    <option name="showControllers" value="false" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -386,7 +349,9 @@
       <workItem from="1666179524470" duration="82000" />
       <workItem from="1666179624576" duration="73000" />
       <workItem from="1666791043099" duration="4382000" />
-      <workItem from="1666795441529" duration="5874000" />
+      <workItem from="1666795441529" duration="10156000" />
+      <workItem from="1667483067196" duration="4193000" />
+      <workItem from="1667564350941" duration="7705000" />
     </task>
     <task id="LOCAL-00001" summary="include README">
       <created>1647805566978</created>
@@ -458,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661362523021</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Prepare GetAll Methods">
+      <created>1666869550798</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666869550798</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,7 +610,8 @@
     <MESSAGE value="marge with pageable" />
     <MESSAGE value="add logger" />
     <MESSAGE value="Mapping Relationships to Communication Between Microservices" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mapping Relationships to Communication Between Microservices" />
+    <MESSAGE value="Prepare GetAll Methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepare GetAll Methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
