@@ -4,18 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d44d55c-77cd-4f4d-97d5-901912c415f7" name="Changes" comment="Prepare GetAll Methods">
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/clients/UserClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/configs/RestTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserCourseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/CourseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/ResponsePageDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/enums/CourseLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/enums/CourseStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/UtilsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UtilsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+    <list default="true" id="0d44d55c-77cd-4f4d-97d5-901912c415f7" name="Changes" comment="API Composition Pattern em Course Microservice">
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/CourseClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/configs/RestTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/dtos/ResponsePageDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/dtos/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/enums/UserStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/enums/UserType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/UtilsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/UtilsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/clients/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/clients/UserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/ResponsePageDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/ResponsePageDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,38 +108,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/WORKSPACE/EAD/authuser/src/main/java/com/ead/authuser/enums&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;2f57c6125b3e8092a27b87f6f0ea9d6f&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "TODO_SCOPE": "All Places",
+    "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
+    "last_opened_file_path": "D:/WORKSPACE/EAD/course/src/main/java/com/ead/course/services/impl",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "2f57c6125b3e8092a27b87f6f0ea9d6f"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORKSPACE\EAD\course\src\main\java\com\ead\course\services\impl" />
+      <recent name="D:\WORKSPACE\EAD\course\src\main\java\com\ead\course\enums" />
       <recent name="D:\WORKSPACE\EAD\authuser\src\main\java\com\ead\authuser\enums" />
       <recent name="D:\WORKSPACE\EAD\course\src\main\java\com\ead\course" />
       <recent name="D:\WORKSPACE\EAD\authuser\src\main\java\com\ead\authuser" />
-      <recent name="D:\WORKSPACE\EAD\authuser\src\main\java\com\ead\" />
-      <recent name="D:\WORKSPACE\EAD\authuser\src\main\java\com\ead\authuser\configs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\WORKSPACE\EAD\authuser\src\main\java\com\ead\authuser\models" />
@@ -146,9 +148,11 @@
       <recent name="com.ead" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ead.course.dtos" />
+      <recent name="com.ead.course.configs" />
+      <recent name="com.ead.course.clients" />
       <recent name="com.ead.course.specifications" />
       <recent name="com.ead.course.controlles" />
-      <recent name="com.ead.course.dtos" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -166,7 +170,7 @@
     </option>
     <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthuserApplication">
+  <component name="RunManager" selected="Spring Boot.CourseApplication">
     <configuration name="AuthuserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="authuser" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ead.authuser.AuthuserApplication" />
@@ -228,8 +232,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AuthuserApplication" />
         <item itemvalue="Spring Boot.CourseApplication" />
+        <item itemvalue="Spring Boot.AuthuserApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -351,7 +355,7 @@
       <workItem from="1666791043099" duration="4382000" />
       <workItem from="1666795441529" duration="10156000" />
       <workItem from="1667483067196" duration="4193000" />
-      <workItem from="1667564350941" duration="7705000" />
+      <workItem from="1667564350941" duration="11243000" />
     </task>
     <task id="LOCAL-00001" summary="include README">
       <created>1647805566978</created>
@@ -430,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666869550798</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="API Composition Pattern em Authuser Microservice">
+      <created>1667592106080</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1667592106080</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -611,7 +622,9 @@
     <MESSAGE value="add logger" />
     <MESSAGE value="Mapping Relationships to Communication Between Microservices" />
     <MESSAGE value="Prepare GetAll Methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prepare GetAll Methods" />
+    <MESSAGE value="API Composition Pattern em Authuser Microservice" />
+    <MESSAGE value="API Composition Pattern em Course Microservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="API Composition Pattern em Course Microservice" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -635,6 +648,26 @@
           <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java</url>
           <line>91</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseUserController.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/CourseClient.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/CourseClient.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/CourseClient.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
