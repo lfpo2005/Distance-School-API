@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d44d55c-77cd-4f4d-97d5-901912c415f7" name="Changes" comment="API Composition Pattern em Course Microservice">
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/CourseClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/configs/RestTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/dtos/ResponsePageDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/dtos/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/enums/UserStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/enums/UserType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/UtilsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/UtilsServiceImpl.java" afterDir="false" />
+    <list default="true" id="0d44d55c-77cd-4f4d-97d5-901912c415f7" name="Changes" comment="API Composition Pattern e Synchronous Communication">
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/InstructorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/InstructorDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/clients/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/clients/UserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/ResponsePageDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/ResponsePageDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +23,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTTP Request" />
-        <option value="Swagger" />
         <option value="OpenAPI" />
         <option value="Interface" />
+        <option value="Swagger" />
         <option value="Class" />
       </list>
     </option>
@@ -120,7 +110,7 @@
     "TODO_SCOPE": "All Places",
     "WebServerToolWindowFactoryState": "false",
     "extract.method.default.visibility": "private",
-    "last_opened_file_path": "D:/WORKSPACE/EAD/course/src/main/java/com/ead/course/services/impl",
+    "last_opened_file_path": "D:/WORKSPACE/EAD/course",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -129,8 +119,9 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "2f57c6125b3e8092a27b87f6f0ea9d6f"
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.customizations",
+    "spring.configuration.checksum": "84fd8b29f79f6f0e443ea038ad7793e4"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -170,7 +161,7 @@
     </option>
     <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.CourseApplication">
+  <component name="RunManager" selected="Spring Boot.AuthuserApplication">
     <configuration name="AuthuserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="authuser" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ead.authuser.AuthuserApplication" />
@@ -222,7 +213,7 @@
       <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
       <option name="jdkPath" value="Default" />
       <option name="language" value="java" />
-      <option name="specificationPath" value="D:\WORKSPACE\EAD\course\src\main\java\com\ead\course\controllers\cor.json" />
+      <option name="specificationPath" value="D:\WORKSPACE\EAD\course\swagger.yaml" />
       <method v="2" />
     </configuration>
     <list>
@@ -232,8 +223,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CourseApplication" />
         <item itemvalue="Spring Boot.AuthuserApplication" />
+        <item itemvalue="Spring Boot.CourseApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -355,7 +346,8 @@
       <workItem from="1666791043099" duration="4382000" />
       <workItem from="1666795441529" duration="10156000" />
       <workItem from="1667483067196" duration="4193000" />
-      <workItem from="1667564350941" duration="11243000" />
+      <workItem from="1667564350941" duration="14101000" />
+      <workItem from="1667676451725" duration="18758000" />
     </task>
     <task id="LOCAL-00001" summary="include README">
       <created>1647805566978</created>
@@ -441,7 +433,21 @@
       <option name="project" value="LOCAL" />
       <updated>1667592106080</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="API Composition Pattern em Course Microservice">
+      <created>1667655577659</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667655577659</updated>
+    </task>
+    <task id="LOCAL-00014" summary="API Composition Pattern e Synchronous Communication">
+      <created>1667750201654</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1667750201654</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,7 +630,8 @@
     <MESSAGE value="Prepare GetAll Methods" />
     <MESSAGE value="API Composition Pattern em Authuser Microservice" />
     <MESSAGE value="API Composition Pattern em Course Microservice" />
-    <option name="LAST_COMMIT_MESSAGE" value="API Composition Pattern em Course Microservice" />
+    <MESSAGE value="API Composition Pattern e Synchronous Communication" />
+    <option name="LAST_COMMIT_MESSAGE" value="API Composition Pattern e Synchronous Communication" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -641,33 +648,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java</url>
-          <line>89</line>
+          <line>88</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java</url>
-          <line>91</line>
+          <line>90</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseUserController.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/AuthUserClient.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/CourseClient.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/CourseClient.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/CourseClient.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/AuthUserClient.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
