@@ -57,4 +57,9 @@ public class CourseModel extends RepresentationModel<CourseModel>  implements Se
     @OneToMany(mappedBy = "course", fetch = FetchType.LAZY)
     private Set<CourseUserModel> courseUsers;
 
+
+    public CourseUserModel convertToCourseUserModel(UUID userID){
+        return new CourseUserModel(null, this, userID);
+    }
+
 }
