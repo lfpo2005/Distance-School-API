@@ -1,3 +1,52 @@
+GET http://localhost:8087/users
+
+<> 2022-10-28T112138.200.json
+
+###
+
+POST http://localhost:8087/auth/signup
+
+<> 2022-10-28T112047.400.json
+
+###
+
+GET https://httpbin.org/basic-auth/user/passwd
+Authorization: Basic user passwd
+
+<> 2022-10-28T112013.200.json
+
+###
+
+GET http://localhost:8087/users/00d73e09-fb64-44b5-a9bf-2fdbe1a32cd1
+
+<> 2022-10-28T111856.200.json
+
+###
+
+GET http://localhost:8087/users/00d73e09-fb64-44b5-a9bf-2fdbe1a32cd13
+
+<> 2022-10-28T111850.400.json
+
+###
+
+GET http://localhost:8087/users/00d73e09-fb64-44b5-a9bf-2fdbe1a32cd1
+
+<> 2022-10-28T111823.200.json
+
+###
+
+GET http://localhost:8087/users/00d73e09-fb64-44b5-a9bf-2fdbe1a32cd1
+
+<> 2022-10-28T111815.200.json
+
+###
+
+GET http://localhost:8087/users
+
+<> 2022-10-28T111746.200.json
+
+###
+
 GET http://v1/courses
 
 ###
