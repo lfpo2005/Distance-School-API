@@ -5,68 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d44d55c-77cd-4f4d-97d5-901912c415f7" name="Changes" comment="merged API_Composition_Pattern">
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/clients/CourseClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/configs/RestTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/InstructorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserCourseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/CourseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/InstructorDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/ResponsePageDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/UserCourseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/enums/CourseLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/enums/CourseStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/models/UserCourseModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/repositories/UserCourseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/UserCourseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/UtilsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UserCourseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UtilsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/AuthUserClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/configs/RestTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/dtos/CourseUserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/dtos/ResponsePageDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/dtos/SubscriptionDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/dtos/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/enums/UserStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/enums/UserType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/models/CourseUserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/repositories/CourseUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/CourseUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/UtilsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/CourseUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/UtilsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/validation/CourseValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_08_2022_10_28_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_08_2022_10_28__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/284f99adbb9c55e68464e76dcf5e45e194cacaa8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/37154f3283b869a60ae457bcd48a192478b3c450" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/371cd057dcfb6bb76b920460917765bb98f8d608" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/371cd057dcfb6bb76b920460917765bb98f8d608" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/4/8481fb8d2599b6b87c0cc5f83756aaf591425f18" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e58566fae79f6bd912585456d7d1530c65230e5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a6471238067fd7d76ea8556fc2f232a65040f017" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a91198bd8e0b5e0c67f93b98abed9ef85fdb53b4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c16964810fb8006314858f81d5f80ca4c5386c3a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d9a3563bb0f56b5f238a527b9ecdbe1729b85ccb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0b88759fc499346c65720aacb17a9c2f2f4001e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/service-registry/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/service-registry/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/service-registry/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/service-registry/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/service-registry/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/service-registry/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/service-registry/src/main/java/com/ead/serviceregistry/ServiceRegistryApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/service-registry/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/service-registry/src/test/java/com/ead/serviceregistry/ServiceRegistryApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authuser/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/configs/ResolverConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/configs/ResolverConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/models/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/models/UserModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/specifications/SpecificationTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/specifications/SpecificationTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/AuthuserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/AuthuserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/configs/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/configs/RestTemplateConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authuser/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/course/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/models/CourseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/models/CourseModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/repositories/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/repositories/CourseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/CourseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/specifications/SpecificationTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/specifications/SpecificationTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/CourseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/CourseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/configs/RestTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/configs/RestTemplateConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +66,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -158,32 +117,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/WORKSPACE/EAD/course&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;84fd8b29f79f6f0e443ea038ad7793e4&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "TODO_SCOPE": "All Places",
+    "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
+    "last_opened_file_path": "D:/WORKSPACE/EAD/service-registry/service-registry/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.customizations",
+    "spring.configuration.checksum": "84fd8b29f79f6f0e443ea038ad7793e4"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\WORKSPACE\EAD\course\src\main\java\com\ead\course\services\impl" />
@@ -221,7 +180,7 @@
     </option>
     <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.CourseApplication">
+  <component name="RunManager" selected="Spring Boot.AuthuserApplication">
     <configuration name="AuthuserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="authuser" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ead.authuser.AuthuserApplication" />
@@ -255,6 +214,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceRegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-registry" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ead.serviceregistry.ServiceRegistryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="SwaggerCodegen">
       <option name="activeConfigurationType" value="FILE" />
       <option name="configurationPath" value="" />
@@ -277,14 +243,15 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.ServiceRegistryApplication" />
       <item itemvalue="Spring Boot.NotificationApplication" />
       <item itemvalue="Spring Boot.CourseApplication" />
       <item itemvalue="Spring Boot.AuthuserApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CourseApplication" />
         <item itemvalue="Spring Boot.AuthuserApplication" />
+        <item itemvalue="Spring Boot.CourseApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -507,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667750201654</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="merged API_Composition_Pattern">
+      <created>1667827335989</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1667827335989</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
