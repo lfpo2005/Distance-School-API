@@ -4,190 +4,85 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d44d55c-77cd-4f4d-97d5-901912c415f7" name="Changes" comment="add logger">
+    <list default="true" id="0d44d55c-77cd-4f4d-97d5-901912c415f7" name="Changes" comment="add eureka server and client">
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/clients/CourseClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/configs/RestTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/InstructorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserCourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/CourseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/InstructorDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/ResponsePageDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/UserCourseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/enums/CourseLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/enums/CourseStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/models/UserCourseModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/repositories/UserCourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/UserCourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/UtilsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UserCourseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UtilsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/AuthUserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/configs/RestTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/dtos/CourseUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/dtos/ResponsePageDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/dtos/SubscriptionDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/dtos/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/enums/UserStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/enums/UserType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/models/CourseUserModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/repositories/CourseUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/CourseUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/UtilsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/CourseUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/UtilsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/validation/CourseValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/service-registry/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/service-registry/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/service-registry/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/service-registry/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/service-registry/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/service-registry/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/service-registry/src/main/java/com/ead/serviceregistry/ServiceRegistryApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/service-registry/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-registry/service-registry/src/test/java/com/ead/serviceregistry/ServiceRegistryApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_12_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_12_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_12_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_12_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_classgraph_classgraph_4_8_147.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_annotations_2_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_core_2_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_core_v3_swagger_models_2_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_ws_rs_jakarta_ws_rs_api_2_1_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_12_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_14_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_14_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_17_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_54.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_65.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_54.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_65.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_54.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_65.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_19_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_22_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_class_model_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_jakarta_inject_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_core_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_runlevel_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_spring_bridge_2_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_2_33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_ext_jersey_bean_validation_2_33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_ext_jersey_entity_filtering_2_33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_ext_jersey_spring5_2_33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_inject_jersey_hk2_2_33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_json_jackson_2_33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_6_10_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_2_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_2_3_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_25_0_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_4_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_3_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_4_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_analysis_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_util_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_3_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_32.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_common_1_6_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_ui_1_6_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springdoc_springdoc_openapi_webmvc_core_1_6_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_hateoas_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jersey_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_hateoas_spring_hateoas_1_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_2_0_0_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_3_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_3_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_swagger_ui_4_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_webjars_locator_core_0_50.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_08_2022_10_28__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_08_2022_10_28__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_08_2022_10_28_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_08_2022_10_28__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/284f99adbb9c55e68464e76dcf5e45e194cacaa8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/37154f3283b869a60ae457bcd48a192478b3c450" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/371cd057dcfb6bb76b920460917765bb98f8d608" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/371cd057dcfb6bb76b920460917765bb98f8d608" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/4/8481fb8d2599b6b87c0cc5f83756aaf591425f18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e58566fae79f6bd912585456d7d1530c65230e5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a6471238067fd7d76ea8556fc2f232a65040f017" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a91198bd8e0b5e0c67f93b98abed9ef85fdb53b4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c16964810fb8006314858f81d5f80ca4c5386c3a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d9a3563bb0f56b5f238a527b9ecdbe1729b85ccb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0b88759fc499346c65720aacb17a9c2f2f4001e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authuser/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/AuthuserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/AuthuserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/configs/ResolverConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/configs/ResolverConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/AuthenticationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/models/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/models/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/specifications/SpecificationTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/specifications/SpecificationTemplate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authuser/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/course/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/CourseApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/CourseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/CourseApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/LessonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/LessonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/ModuleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/ModuleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/models/CourseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/models/CourseModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/repositories/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/repositories/CourseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/CourseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/specifications/SpecificationTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/specifications/SpecificationTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,14 +98,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTTP Request" />
-        <option value="Class" />
-        <option value="Swagger" />
         <option value="OpenAPI" />
+        <option value="Interface" />
+        <option value="Swagger" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="pageable" />
+    <option name="BRANCH" value="Cross_Cutting_Service_Registry_Discovery_Pattern" />
     <option name="OPTIONS">
       <set>
         <option value="SQUASH" />
@@ -226,7 +122,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -238,6 +134,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" environment="test" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -282,9 +181,11 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "TODO_SCOPE": "All Places",
     "WebServerToolWindowFactoryState": "false",
     "extract.method.default.visibility": "private",
-    "last_opened_file_path": "D:/WORKSPACE/EAD/course/src/main/java/com/ead/course",
+    "last_opened_file_path": "D:/WORKSPACE/EAD/service-registry/service-registry/pom.xml",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -293,25 +194,31 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "spring.configuration.checksum": "e3fc03db780406f3450d64a7c8136026"
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.customizations",
+    "spring.configuration.checksum": "84fd8b29f79f6f0e443ea038ad7793e4"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORKSPACE\EAD\course\src\main\java\com\ead\course\services\impl" />
+      <recent name="D:\WORKSPACE\EAD\course\src\main\java\com\ead\course\enums" />
+      <recent name="D:\WORKSPACE\EAD\authuser\src\main\java\com\ead\authuser\enums" />
       <recent name="D:\WORKSPACE\EAD\course\src\main\java\com\ead\course" />
       <recent name="D:\WORKSPACE\EAD\authuser\src\main\java\com\ead\authuser" />
-      <recent name="D:\WORKSPACE\EAD\authuser\src\main\java\com\ead\" />
-      <recent name="D:\WORKSPACE\EAD\authuser\src\main\java\com\ead\authuser\configs" />
-      <recent name="D:\eclipse-workspace\EAD\course\src\main\java\com\ead\course" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WORKSPACE\EAD\authuser\src\main\java\com\ead\authuser\models" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.ead" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ead.course.dtos" />
+      <recent name="com.ead.course.configs" />
+      <recent name="com.ead.course.clients" />
       <recent name="com.ead.course.specifications" />
       <recent name="com.ead.course.controlles" />
-      <recent name="com.ead.course.dtos" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -343,7 +250,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="CourseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="course" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ead.course.CourseApplication" />
       <extension name="coverage">
@@ -356,22 +263,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="course" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ead.CourseApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ead.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="notification" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ead.notification.NotificationApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="notification" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ead.notification.NotificationApplication" />
+    <configuration name="ServiceRegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-registry" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ead.serviceregistry.ServiceRegistryApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -394,41 +295,29 @@
       <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
       <option name="jdkPath" value="Default" />
       <option name="language" value="java" />
-      <option name="specificationPath" value="D:\WORKSPACE\EAD\course\src\main\java\com\ead\course\controllers\cor.json" />
+      <option name="specificationPath" value="D:\WORKSPACE\EAD\course\swagger.yaml" />
       <method v="2" />
     </configuration>
-    <configuration name="course.json" type="SwaggerCodegen">
-      <option name="activeConfigurationType" value="FILE" />
-      <option name="configurationPath" value="" />
-      <option name="customJreEnabled" value="false" />
-      <option name="customTemplatesPath" value="" />
-      <option name="enableDebugLogging" value="false" />
-      <option name="generateToPath" value="D:\WORKSPACE\EAD\gen" />
-      <option name="generationParameters">
-        <list>
-          <CliArgumentViewModel>
-            <option name="name" value="" />
-            <option name="value" />
-          </CliArgumentViewModel>
-        </list>
-      </option>
-      <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
-      <option name="jdkPath" value="Default" />
-      <option name="language" value="java" />
-      <option name="specificationPath" value="D:\WORKSPACE\EAD\course\src\main\java\com\ead\course\controllers\cor.json" />
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ServiceRegistryApplication" />
+      <item itemvalue="Spring Boot.NotificationApplication" />
+      <item itemvalue="Spring Boot.CourseApplication" />
+      <item itemvalue="Spring Boot.AuthuserApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AuthuserApplication" />
-        <item itemvalue="Spring Boot.CourseApplication (1)" />
         <item itemvalue="Spring Boot.CourseApplication" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringBeansView">
+    <option name="showGraph" value="false" />
     <option name="beanDetailsProportion" value="0.3" />
+  </component>
+  <component name="SpringMvcView">
+    <option name="showControllers" value="false" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -512,6 +401,36 @@
       <workItem from="1661279963071" duration="475000" />
       <workItem from="1661280614736" duration="1423000" />
       <workItem from="1661282049958" duration="7289000" />
+      <workItem from="1661362336327" duration="3572000" />
+      <workItem from="1663976050960" duration="1934000" />
+      <workItem from="1663978537981" duration="719000" />
+      <workItem from="1663984772302" duration="2108000" />
+      <workItem from="1664025303516" duration="1893000" />
+      <workItem from="1664112324356" duration="644000" />
+      <workItem from="1664210755010" duration="4540000" />
+      <workItem from="1664446323016" duration="430000" />
+      <workItem from="1664460734594" duration="693000" />
+      <workItem from="1664466306513" duration="658000" />
+      <workItem from="1664629395780" duration="4361000" />
+      <workItem from="1664641729519" duration="1215000" />
+      <workItem from="1664644703634" duration="36000" />
+      <workItem from="1664646279858" duration="2563000" />
+      <workItem from="1664649962246" duration="1230000" />
+      <workItem from="1665227288145" duration="3596000" />
+      <workItem from="1665409214322" duration="3059000" />
+      <workItem from="1665607826411" duration="864000" />
+      <workItem from="1665614698906" duration="3465000" />
+      <workItem from="1665626596012" duration="3000" />
+      <workItem from="1665845016194" duration="2199000" />
+      <workItem from="1665950255376" duration="599000" />
+      <workItem from="1666112373224" duration="599000" />
+      <workItem from="1666179524470" duration="82000" />
+      <workItem from="1666179624576" duration="73000" />
+      <workItem from="1666791043099" duration="4382000" />
+      <workItem from="1666795441529" duration="10156000" />
+      <workItem from="1667483067196" duration="4193000" />
+      <workItem from="1667564350941" duration="14101000" />
+      <workItem from="1667676451725" duration="18758000" />
     </task>
     <task id="LOCAL-00001" summary="include README">
       <created>1647805566978</created>
@@ -576,7 +495,49 @@
       <option name="project" value="LOCAL" />
       <updated>1661175254174</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Mapping Relationships to Communication Between Microservices">
+      <created>1661362523021</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1661362523021</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Prepare GetAll Methods">
+      <created>1666869550798</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666869550798</updated>
+    </task>
+    <task id="LOCAL-00012" summary="API Composition Pattern em Authuser Microservice">
+      <created>1667592106080</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1667592106080</updated>
+    </task>
+    <task id="LOCAL-00013" summary="API Composition Pattern em Course Microservice">
+      <created>1667655577659</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667655577659</updated>
+    </task>
+    <task id="LOCAL-00014" summary="API Composition Pattern e Synchronous Communication">
+      <created>1667750201654</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1667750201654</updated>
+    </task>
+    <task id="LOCAL-00015" summary="merged API_Composition_Pattern">
+      <created>1667827335989</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1667827335989</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -755,7 +716,50 @@
     <MESSAGE value="add Lesson controller" />
     <MESSAGE value="marge with pageable" />
     <MESSAGE value="add logger" />
-    <option name="LAST_COMMIT_MESSAGE" value="add logger" />
+    <MESSAGE value="Mapping Relationships to Communication Between Microservices" />
+    <MESSAGE value="Prepare GetAll Methods" />
+    <MESSAGE value="API Composition Pattern em Authuser Microservice" />
+    <MESSAGE value="API Composition Pattern em Course Microservice" />
+    <MESSAGE value="API Composition Pattern e Synchronous Communication" />
+    <MESSAGE value="merged API_Composition_Pattern" />
+    <MESSAGE value="add eureka server and client" />
+    <option name="LAST_COMMIT_MESSAGE" value="add eureka server and client" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserController.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserController.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/AuthUserClient.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/AuthUserClient.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EAD$CourseApplication.ic" NAME="CourseApplication Coverage Results" MODIFIED="1649556778992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

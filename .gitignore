@@ -78,6 +78,8 @@ local.properties
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+.idea/**
+.idea
 
 # AWS User-specific
 .idea/**/aws.xml
@@ -221,6 +223,7 @@ replay_pid*
 # Ignore all local history of files
 .history
 .ionide
+
 
 # Support for Project snippet scope
 
