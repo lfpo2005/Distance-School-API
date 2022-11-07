@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="api-gateway" />
         <module name="EAD" />
         <module name="course" />
         <module name="notification" />
@@ -15,6 +16,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-gateway" target="17" />
       <module name="authuser" target="17" />
       <module name="course" target="17" />
       <module name="EAD" target="1.5" />
@@ -24,6 +26,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-parameters" />
       <module name="authuser" options="-parameters" />
       <module name="course" options="-parameters" />
       <module name="notification" options="-parameters" />
