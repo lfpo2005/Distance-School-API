@@ -5,7 +5,6 @@ import com.ead.course.models.CourseModel;
 import com.ead.course.models.CourseUserModel;
 import com.ead.course.repositories.CourseUserRepository;
 import com.ead.course.services.CourseUserService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +12,7 @@ import javax.transaction.Transactional;
 import java.util.UUID;
 
 @Service
-public class CourseUserServiceImpl implements CourseUserService{
+public class CourseUserServiceImpl implements CourseUserService {
 
     @Autowired
     CourseUserRepository courseUserRepository;
@@ -39,5 +38,15 @@ public class CourseUserServiceImpl implements CourseUserService{
         return courseUserModel;
     }
 
+    @Override
+    public boolean existsByUserId(UUID userId) {
+        return courseUserRepository.existsByUserId(userId);
+    }
+
+    @Transactional
+    @Override
+    public void deleteCourseUserByUser(UUID userId) {
+        courseUserRepository.deleteAllByUserId(userId);
+    }
 
 }
