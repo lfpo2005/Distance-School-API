@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e81ae270-7cfb-4867-b455-a730b95d4d2b" name="Changes" comment="merged with Cross Cutting API Gateway Pattern">
+    <list default="true" id="9f4073a3-83d8-4337-bd1c-f2e1d442b867" name="Changes" comment="merged with Cross Cutting API Gateway Pattern">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/clients/CourseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/clients/CourseClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserCourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserCourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/repositories/UserCourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/repositories/UserCourseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/UserCourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/UserCourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UserCourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UserCourseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/AuthUserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/AuthUserClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/repositories/CourseUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/repositories/CourseUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/CourseUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/CourseUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/CourseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/CourseUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/CourseUserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +29,7 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/Cross_Cutting_API_Gateway_Pattern" />
+    <option name="BRANCH" value="origin/dev" />
     <option name="OPTIONS">
       <set>
         <option value="SQUASH" />
@@ -173,7 +159,7 @@
     </option>
     <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthuserApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceRegistryApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
       <module name="api-gateway" />
@@ -215,6 +201,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="notification" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ead.notification.NotificationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServiceRegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="service-registry" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ead.serviceregistry.ServiceRegistryApplication" />
@@ -250,6 +243,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.NotificationApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.AuthuserApplication" />
       <item itemvalue="Spring Boot.CourseApplication" />
@@ -257,10 +251,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AuthuserApplication" />
-        <item itemvalue="Spring Boot.CourseApplication" />
         <item itemvalue="Spring Boot.ApiGatewayApplication" />
         <item itemvalue="Spring Boot.ServiceRegistryApplication" />
+        <item itemvalue="Spring Boot.AuthuserApplication" />
+        <item itemvalue="Spring Boot.CourseApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -499,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667844768305</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="merged with Synchronous Communication - Deletion between Microservices">
+      <created>1667961757216</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1667961757216</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -687,7 +688,8 @@
     <MESSAGE value="add eureka server and client" />
     <MESSAGE value="Cross Cutting API Gateway Pattern" />
     <MESSAGE value="merged with Cross Cutting API Gateway Pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="merged with Cross Cutting API Gateway Pattern" />
+    <MESSAGE value="merged with Synchronous Communication - Deletion between Microservices" />
+    <option name="LAST_COMMIT_MESSAGE" value="merged with Synchronous Communication - Deletion between Microservices" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

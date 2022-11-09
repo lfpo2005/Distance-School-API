@@ -16,13 +16,12 @@ and best practices using the ISO 8601 UTC standard. </p>
 
 ### Features
 
-- [x] Authuser
-- [x] Course
-- [x] Notification
-- [ ] Security
-- [ ] Deploy
-- [ ] FrontEnd
-
+- [x] Ms-Authuser
+- [x] Ms_Course
+- [ ] Ms-Notification
+- [ ] Api-Gateway
+- [ ] Api-Payment
+- [X] Service-Registry
 
 ### 🛠 Technologies
 
@@ -32,19 +31,16 @@ The following tools were used in the construction of the project:
 <p>* Spring Web</p>
 <p>* Spring Validation </p>
 <p>* Spring Security </p>
-<p>* DTO with JsonView - Multiple Views in APIs </p>
-<p>* Hypermedia com Spring Hateoas </p>
 <p>* JPA </p>
-<p>* Java 11</p>
+<p>* Java 17</p>
 <p>* Postgresql</p>
-
-
+<p>* Docker</p>
+<p>* Deploy</p>
 
 ### Autor
----
+---------
 
 <h3> <a href="https://www.linkedin.com/in/fernando-oliveira-074298113/" title="lfcode"> Fernando Oliveira </a></h3>
-
 
 Feito com ❤️ por Fernando Oliveira 👋🏽 Entre em contato!
 
