@@ -1,13 +1,13 @@
 server:
-  port: 8082
+  port: 8087
   servlet:
-    context-path: '/ead-course/'
+    context-path: '/ead-authuser/'
 
 spring:
   application:
-    name: ead-course-service
+    name: ead-authuser-service
   datasource:
-    url: jdbc:postgresql://localhost:5432/ead-course
+    url:  jdbc:postgresql://localhost:5433/ead-authuser
     username: postgres
     password: postgres
   jpa:
@@ -19,22 +19,22 @@ spring:
     properties:
       hibernate:
         show_sql: true
-    output:
-      ansi:
-        enabled: Always
+  output:
+    ansi:
+      enabled: Always
 
 
-  logging:
-    level:
-      com.ead: TRACE
-      root: INFO
-      org.springframework.web: DEBUG
-      org.hibernate: INFO
+logging:
+  level:
+    com.ead: TRACE
+    root: INFO
+    org.springframework.web: DEBUG
+    org.hibernate: INFO
 
 ead:
   api:
     url:
-      authuser: 'http://ead-authuser-service/ead-authuser'
+      course: 'http://ead-course-service/ead-course/'
 
 eureka:
   client:
@@ -42,11 +42,3 @@ eureka:
       defaultZone: 'http://localhost:8761/eureka'
   instance:
     hostname: localhost
-
-
-
-
-
-
-
-
