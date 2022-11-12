@@ -4,7 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e81ae270-7cfb-4867-b455-a730b95d4d2b" name="Changes" comment="merged with Cross Cutting API Gateway Pattern" />
+    <list default="true" id="e81ae270-7cfb-4867-b455-a730b95d4d2b" name="Changes" comment="merged Event Driven com Event-Carried State Transfer Pattern e Broker Pattern">
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/clients/RabbitmqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/enums/ActionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/publishes/UserEventPublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/configs/RabbitmqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/consumers/UserConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/dtos/UserEventDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/enums/ActionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/models/UserModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/clients/CourseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/clients/CourseClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/InstructorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/InstructorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserCourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserCourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/models/UserCourseModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/models/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/models/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/repositories/UserCourseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/UserCourseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UserCourseServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/specifications/SpecificationTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/specifications/SpecificationTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authuser/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/course/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/AuthUserClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/dtos/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/UserEventDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/models/CourseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/models/CourseModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/models/CourseUserModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/repositories/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/repositories/CourseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/repositories/CourseUserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/CourseUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/CourseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/CourseUserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/UtilsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/UtilsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/specifications/SpecificationTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/specifications/SpecificationTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/validation/CourseValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/validation/CourseValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/resources/application.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,12 +70,13 @@
         <option value="OpenAPI" />
         <option value="Interface" />
         <option value="Swagger" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/Cross_Cutting_API_Gateway_Pattern" />
+    <option name="BRANCH" value="origin/Event-Carried_State_Transfer_Pattern_and_Broker_Pattern" />
     <option name="OPTIONS">
       <set>
         <option value="SQUASH" />
@@ -43,7 +92,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Cross_Cutting_API_Gateway_Pattern" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -94,39 +143,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "TODO_SCOPE": "All Places",
-    "WebServerToolWindowFactoryState": "false",
-    "extract.method.default.visibility": "private",
-    "last_opened_file_path": "D:/WORKSPACE/EAD/api-gateway/api-gateway/pom.xml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.customizations",
-    "spring.configuration.checksum": "b1cc2b27983b1c75020e03ea7b348a59"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/media/fernando/F6C65FFBC65FBA97/WORKSPACE/EAD/course/src/main/java/com/ead/course/enums&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;ce816e9ba97cdc67d7e2ff84af875e9a&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/course/src/main/java/com/ead/course/enums" />
       <recent name="D:\WORKSPACE\EAD\course\src\main\java\com\ead\course\services\impl" />
       <recent name="D:\WORKSPACE\EAD\course\src\main\java\com\ead\course\enums" />
       <recent name="D:\WORKSPACE\EAD\authuser\src\main\java\com\ead\authuser\enums" />
       <recent name="D:\WORKSPACE\EAD\course\src\main\java\com\ead\course" />
-      <recent name="D:\WORKSPACE\EAD\authuser\src\main\java\com\ead\authuser" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\WORKSPACE\EAD\authuser\src\main\java\com\ead\authuser\models" />
@@ -135,11 +192,11 @@
       <recent name="com.ead" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ead.course.enums" />
       <recent name="com.ead.course.dtos" />
       <recent name="com.ead.course.configs" />
       <recent name="com.ead.course.clients" />
       <recent name="com.ead.course.specifications" />
-      <recent name="com.ead.course.controlles" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -157,7 +214,7 @@
     </option>
     <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthuserApplication">
+  <component name="RunManager" selected="Spring Boot.CourseApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" />
       <module name="api-gateway" />
@@ -199,15 +256,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceRegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="notification" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ead.notification.NotificationApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceRegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service-registry" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ead.serviceregistry.ServiceRegistryApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ead.serviceregistry.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -233,18 +291,44 @@
       <option name="specificationPath" value="D:\WORKSPACE\EAD\course\swagger.yaml" />
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.sudo: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="services">
+            <list>
+              <option value="sudo" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.sudo: Compose Deployment" />
+      <item itemvalue="Spring Boot.ServiceRegistryApplication" />
+      <item itemvalue="Spring Boot.NotificationApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.AuthuserApplication" />
       <item itemvalue="Spring Boot.CourseApplication" />
-      <item itemvalue="Spring Boot.ServiceRegistryApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AuthuserApplication" />
         <item itemvalue="Spring Boot.CourseApplication" />
+        <item itemvalue="Spring Boot.AuthuserApplication" />
         <item itemvalue="Spring Boot.ApiGatewayApplication" />
-        <item itemvalue="Spring Boot.ServiceRegistryApplication" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.sudo: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -370,6 +454,16 @@
       <workItem from="1667676451725" duration="18758000" />
       <workItem from="1667842296296" duration="2348000" />
       <workItem from="1667956225222" duration="4753000" />
+      <workItem from="1668096728361" duration="997000" />
+      <workItem from="1668098139451" duration="41000" />
+      <workItem from="1668098191771" duration="42000" />
+      <workItem from="1668098244730" duration="305000" />
+      <workItem from="1668100982808" duration="320000" />
+      <workItem from="1668112216643" duration="2063000" />
+      <workItem from="1668114959712" duration="7829000" />
+      <workItem from="1668170055643" duration="1232000" />
+      <workItem from="1668191846801" duration="4253000" />
+      <workItem from="1668259832318" duration="22042000" />
     </task>
     <task id="LOCAL-00001" summary="include README">
       <created>1647805566978</created>
@@ -483,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667844768305</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Event Driven com Event-Carried State Transfer Pattern e Broker Pattern">
+      <created>1668289938489</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1668289938489</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,7 +741,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="pageable" />
+                        <option value="dev" />
                       </list>
                     </value>
                   </entry>
@@ -671,31 +772,13 @@
     <MESSAGE value="add eureka server and client" />
     <MESSAGE value="Cross Cutting API Gateway Pattern" />
     <MESSAGE value="merged with Cross Cutting API Gateway Pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="merged with Cross Cutting API Gateway Pattern" />
+    <MESSAGE value="Event Driven com Event-Carried State Transfer Pattern e Broker Pattern" />
+    <MESSAGE value="merged Event Driven com Event-Carried State Transfer Pattern e Broker Pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="merged Event Driven com Event-Carried State Transfer Pattern e Broker Pattern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserController.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserController.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java</url>
-          <line>88</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java</url>
-          <line>90</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/AuthUserClient.java</url>
           <line>39</line>
@@ -705,6 +788,21 @@
           <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/AuthUserClient.java</url>
           <line>60</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/course/src/main/java/com/ead/course/consumers/UserConsumer.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserController.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserController.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
