@@ -32,14 +32,10 @@ public class CourseClient {
     String REQUEST_URI_COURSE;
 
     public Page<CourseDto> getAllCourseByUser(UUID userId, Pageable pageable) {
-
         List<CourseDto> searchResult = null;
-
         String url = REQUEST_URI_COURSE + utilsService.createUrlGetAllCourseByUsers(userId, pageable);
-
         log.debug("Request URL: {}", url);
         log.info("Request URL: {}", url);
-
         ResponseEntity<ResponsePageDto<CourseDto>> result = null;
         try {
             ParameterizedTypeReference<ResponsePageDto<CourseDto>> responseType = new ParameterizedTypeReference<ResponsePageDto<CourseDto>>() {
@@ -47,16 +43,10 @@ public class CourseClient {
             result = restTemplate.exchange(url, HttpMethod.GET, null, responseType);
             searchResult = result.getBody().getContent();
             log.debug("Response Number of Elements: {} ", searchResult.size());
-
         } catch (HttpStatusCodeException e) {
             log.error("Error request /courses {} ", e);
         }
         log.info("Ending request /courses userId {} ", userId);
         return result.getBody();
-    }
-
-    public void deleteUserInCourse(UUID userId) {
-        String url = REQUEST_URI_COURSE + "/courses/users/" + userId;
-        restTemplate.exchange(url, HttpMethod.DELETE, null, String.class);
     }
 }

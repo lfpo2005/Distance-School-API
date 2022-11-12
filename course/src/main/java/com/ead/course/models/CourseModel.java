@@ -54,12 +54,8 @@ public class CourseModel extends RepresentationModel<CourseModel>  implements Se
     private Set<ModuleModel> modules;
 
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    @OneToMany(mappedBy = "course", fetch = FetchType.LAZY)
-    private Set<CourseUserModel> courseUsers;
-
-
-    public CourseUserModel convertToCourseUserModel(UUID userID){
-        return new CourseUserModel(null, this, userID);
-    }
-
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "TB_COURSES_USERS", joinColumns = @JoinColumn(name = "course_id"),
+    inverseJoinColumns = @JoinColumn(name = "user_id"))
+    private Set<UserModel> users;
 }
