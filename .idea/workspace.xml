@@ -5,53 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e81ae270-7cfb-4867-b455-a730b95d4d2b" name="Changes" comment="merged Event Driven com Event-Carried State Transfer Pattern e Broker Pattern">
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/clients/RabbitmqConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/enums/ActionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/publishes/UserEventPublisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/configs/RabbitmqConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/consumers/UserConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/dtos/UserEventDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/enums/ActionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/models/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/clients/CourseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/clients/CourseClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/InstructorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/InstructorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserCourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/controllers/UserCourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/models/UserCourseModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/models/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/models/UserModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/repositories/UserCourseRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/UserCourseService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UserCourseServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/services/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/specifications/SpecificationTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/specifications/SpecificationTemplate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authuser/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/course/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/clients/AuthUserClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/controllers/CourseUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/dtos/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/authuser/src/main/java/com/ead/authuser/dtos/UserEventDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/models/CourseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/models/CourseModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/models/CourseUserModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/repositories/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/repositories/CourseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/repositories/CourseUserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/CourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/CourseUserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/CourseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/CourseUserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/UtilsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/services/impl/UtilsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/specifications/SpecificationTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/specifications/SpecificationTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/java/com/ead/course/validation/CourseValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/java/com/ead/course/validation/CourseValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +89,9 @@
         <option name="userSettingsFile" value="C:\apache-maven-3.8.6\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="1zt7pMCOPEFaSPyJaJipsM76ag2" />
   <component name="ProjectLevelVcsManager">
@@ -464,6 +422,7 @@
       <workItem from="1668170055643" duration="1232000" />
       <workItem from="1668191846801" duration="4253000" />
       <workItem from="1668259832318" duration="22042000" />
+      <workItem from="1668363574107" duration="1412000" />
     </task>
     <task id="LOCAL-00001" summary="include README">
       <created>1647805566978</created>
@@ -584,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668289938489</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="merged Event Driven com Event-Carried State Transfer Pattern e Broker Pattern">
+      <created>1668290383555</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1668290383555</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
