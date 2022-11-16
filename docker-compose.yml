@@ -1,17 +1,69 @@
-version: '2.2'
+version: "3.9"
+
 services:
 
-  rabbitmq:
+############## Microservice and DataBase EAD-AuthUser ################
+  
+  db:
+    image: postgres:11
+    container_name: postgres-11-EAD
     restart: always
-    image: rabbitmq:3.9-management
+    volumes:
+      - ./postgres_db:/var/lib/postgresql/data
     environment:
-      RABBITMQ_DEFAULT_USER: "admin"
-      RABBITMQ_DEFAULT_PASS: "admin"
+      - TZ=America/Sao_Paulo
+      - POSTGRES_DB=EAD
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_ROOT_HOST='%'
     ports:
-      - '5672:5672'
-      - '15672:15672'
+      - 5433:5432
+    expose:
+      - 5433
     networks:
-      host:
+      - lfpo-network
+
+
+############## Services RabbitMQ  ################      
+        
+  api-gateway:
+    image: lfpo2005/api-gateway
+    build: ./api-gateway
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - lfpo-network
+        
+        ############## Services RabbitMQ  ################      
+  
+#  service-registry:
+#    image: lfpo2005/service-registry
+#    build: ./service-registry
+#    restart: always
+#    ports:
+#      - 8761:8761
+#    networks:
+#      - lfpo-network  
+#  
+#  
+#  ############## Services RabbitMQ  ################
+#
+#  rabbitmq:
+#    restart: always
+#    container_name: rabbitmq-ead
+#    image: rabbitmq:3.9-management
+#    environment:
+#      RABBITMQ_DEFAULT_USER: "admin"
+#      RABBITMQ_DEFAULT_PASS: "admin"
+#    ports:
+#      - '5672:5672'
+#      - '15672:15672'
+#    networks:
+#      - lfpo-network
+
 
 networks:
-  host:
+  lfpo-network:
+    driver: bridge
+

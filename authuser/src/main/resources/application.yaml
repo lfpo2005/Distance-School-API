@@ -1,34 +1,10 @@
+spring:
+  profiles:
+    active: docker
+
 server:
-  port: 8087
   servlet:
     context-path: '/ead-authuser/'
-
-spring:
-  application:
-    name: ead-authuser-service
-  datasource:
-    url:  jdbc:postgresql://localhost:5432/ead-authuser-v2
-    username: postgres
-    password: postgres
-  jpa:
-    hibernate:
-      ddl-auto: update
-      dialect: org.hibernate.dialect.PostgreSQLDialect
-      jdbc:
-        lob.non-contextual-creation: true
-    properties:
-      hibernate:
-        show_sql: true
-  output:
-    ansi:
-      enabled: Always
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: admin
-    password: admin
-#    addresses: amqps://bohdqncv:V21FA7kO8cgRFUVzGzjanVQv2nKWAzMN@gull.rmq.cloudamqp.com/bohdqncv
-# site: https://gull.rmq.cloudamqp.com/#/connections
 
 
 logging:
@@ -54,10 +30,17 @@ eureka:
     hostname: localhost
 
 resilience4j:
+  circuitbreaker:
+    instances:
+      circuitbreakerInstance:
+        slidingWindowSize: 30
+        permittedNumberOfCallsInHalfOpenState: 2
+        slidingWindowType: TIME_BASED
+        minimumNumberOfCalls: 2
+        waitDurationInOpenState: 30s
+        failureRateThreshold: 80
   retry:
     instances:
       retryInstance:
-        max-attempts: 3
-        wait-duration: 5s
-
-
+        maxRetryAttempts: 3
+        waitDuration: 5s

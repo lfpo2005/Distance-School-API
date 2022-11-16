@@ -14,7 +14,8 @@ local.properties
 .settings/
 .loadpath
 .recommenders
-
+.postgres_db
+.idea
 # External tool builders
 .externalToolBuilders/
 
