@@ -1,4 +1,0 @@
-# domain	path	name	value	date
-httpbin.org	/	fake	fake_value	-1
-httpbin.org	/	last_nonce	8945893cb989f1a877a381b357922cde	-1
-httpbin.org	/	stale_after	never	-1
