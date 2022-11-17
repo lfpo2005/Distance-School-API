@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonView;
 import lombok.Data;
 import lombok.ToString;
+import org.hibernate.validator.constraints.br.CPF;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -29,7 +30,7 @@ public class UserDto {
     @UsernameConstraint(groups = UserView.RegistrationPost.class)
     @JsonView(UserView.RegistrationPost.class)
     private String username;
-    
+
     @NotBlank(groups = UserView.RegistrationPost.class)
     @Email (groups = UserView.RegistrationPost.class)
     @JsonView(UserView.RegistrationPost.class)
@@ -53,9 +54,10 @@ public class UserDto {
     @JsonView({UserView.RegistrationPost.class, UserView.UserPut.class})
     private String phoneNumber;
 
-    @JsonView({UserView.RegistrationPost.class})
+    @CPF(groups = {UserView.RegistrationPost.class, UserView.UserPut.class})
+    @JsonView({UserView.RegistrationPost.class, UserView.UserPut.class})
     private String cpf;
-    
+
     @NotBlank (groups = UserView.ImagePut.class)
     @JsonView(UserView.ImagePut.class)
     private String imageUrl;

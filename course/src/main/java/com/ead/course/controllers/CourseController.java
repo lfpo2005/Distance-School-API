@@ -23,21 +23,15 @@ import java.time.ZoneId;
 import java.util.Optional;
 import java.util.UUID;
 
-import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
-import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
-
 @Log4j2
 @RestController
 @RequestMapping("/courses")
 @CrossOrigin(origins = "*", maxAge = 3600)
 public class CourseController {
-
     @Autowired
     CourseService courseService;
-
     @Autowired
     CourseValidator courseValidator;
-
     @PostMapping
     public ResponseEntity<Object> saveCourse(@RequestBody CourseDto courseDto, Errors errors){
         log.debug("POST saveCourse courseDto received: ------> {}", courseDto.toString());
@@ -92,23 +86,16 @@ public class CourseController {
                                                                    sort = "courseId", direction = Sort.Direction.ASC) Pageable pageable,
                                                            @RequestParam(required = false) UUID userId){
 
-        Page<CourseModel> courseModelPage = null;
-
         if (userId != null){
-            courseModelPage = courseService.findAll(SpecificationTemplate.courseUserId(userId).and(spec), pageable);
+            return ResponseEntity.status(HttpStatus.OK)
+                    .body(courseService.findAll(SpecificationTemplate.courseUserId(userId).and(spec), pageable));
         }else {
-            courseModelPage = courseService.findAll(spec, pageable);
+            return ResponseEntity.status(HttpStatus.OK).body(courseService.findAll(spec, pageable));
         }
-
-        if(!courseModelPage.isEmpty()){
-            for(CourseModel course : courseModelPage.toList()){
-                course.add(linkTo(methodOn(CourseController.class).getOneCourse(course.getCourseId())).withSelfRel());
-            }
-        }
-        return ResponseEntity.status(HttpStatus.OK).body(courseModelPage);
     }
 
-    @GetMapping("/{courseId}")    public ResponseEntity<Object> getOneCourse(@PathVariable(value="courseId") UUID courseId){
+    @GetMapping("/{courseId}")
+    public ResponseEntity<Object> getOneCourse(@PathVariable(value="courseId") UUID courseId){
         Optional<CourseModel> courseModelOptional = courseService.findById(courseId);
         if(!courseModelOptional.isPresent()){
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Course Not Found.");

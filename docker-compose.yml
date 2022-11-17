@@ -1,0 +1,46 @@
+version: "3.9"
+
+services:
+
+############## Microservice and DataBase EAD-AuthUser ################
+  
+  db:
+    image: postgres:9.5
+    container_name: postgres-9.5-EAD
+    restart: always
+    volumes:
+      - .extra/postgres_db:/var/lib/postgresql/data
+    environment:
+      - TZ=America/Sao_Paulo
+      - POSTGRES_DB=EAD
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_ROOT_HOST='%'
+    ports:
+      - 5432:5432
+    expose:
+      - 5432
+    networks:
+      - lfpo-network
+
+
+#  ############## Services RabbitMQ  ################
+
+  rabbitmq:
+    restart: always
+    container_name: rabbitmq-ead
+    image: rabbitmq:3.9-management
+    environment:
+      RABBITMQ_DEFAULT_USER: "admin"
+      RABBITMQ_DEFAULT_PASS: "admin"
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+    networks:
+      - lfpo-network
+
+
+networks:
+  lfpo-network:
+    driver: bridge
+

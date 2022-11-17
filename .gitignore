@@ -14,9 +14,11 @@ local.properties
 .settings/
 .loadpath
 .recommenders
-
+.postgres_db
+.idea
 # External tool builders
 .externalToolBuilders/
+.extra
 
 # Locally stored "Eclipse launch configurations"
 *.launch

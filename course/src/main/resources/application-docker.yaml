@@ -1,0 +1,35 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: ead-course-service
+  datasource:
+    url: jdbc:postgresql://localhost:5433/ead-course-v2
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      jdbc:
+        lob.non-contextual-creation: true
+    properties:
+      hibernate:
+        show_sql: true
+    output:
+      ansi:
+        enabled: Always
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+  #    addresses: amqps://bohdqncv:V21FA7kO8cgRFUVzGzjanVQv2nKWAzMN@gull.rmq.cloudamqp.com/bohdqncv
+
+
+
+
+
+
+
