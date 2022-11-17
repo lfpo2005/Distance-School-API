@@ -9,7 +9,7 @@ services:
     container_name: postgres-9.5-EAD
     restart: always
     volumes:
-      - .extra/postgres_db:/var/lib/postgresql/data
+      - ./extra/postgres_db:/var/lib/postgresql/data
     environment:
       - TZ=America/Sao_Paulo
       - POSTGRES_DB=EAD
