@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
 
-############## Microservice and DataBase EAD-AuthUser ################
+  ############## Microservice and DataBase EAD-AuthUser ################
   
   db:
     image: postgres:9.5
@@ -24,7 +24,7 @@ services:
       - lfpo-network
 
 
-#  ############## Services RabbitMQ  ################
+  #  ############## Services RabbitMQ  ################
 
   rabbitmq:
     restart: always

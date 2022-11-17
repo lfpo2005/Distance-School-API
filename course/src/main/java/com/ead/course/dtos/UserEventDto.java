@@ -25,4 +25,6 @@ public class UserEventDto {
         BeanUtils.copyProperties(this, userModel);
         return userModel;
     }
+
+
 }
