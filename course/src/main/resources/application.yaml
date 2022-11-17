@@ -1,39 +1,9 @@
 spring:
-  profiles:
-    active: docker
-
-server:
-  servlet:
-    context-path: '/ead-course/'
-
-  logging:
-    level:
-      com.ead: TRACE
-      root: INFO
-      org.springframework.web: DEBUG
-      org.hibernate: INFO
-
-ead:
-  api:
-    url:
-      authuser: 'http://ead-authuser-service/ead-authuser'
-  broker:
-    exchange:
-      userEventExchange: ead.userevent
-    queue:
-      userEventQueue:
-        name: ead.userevent.ms.course
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: 'http://localhost:8761/eureka'
-  instance:
-    hostname: localhost
-
-
-
-
-
-
-
+  application:
+    name: ead-course-service
+  config:
+    import: 'configserver:'
+  cloud:
+    config:
+      discovery:
+        service-id: ead-config-server
