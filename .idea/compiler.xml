@@ -22,7 +22,7 @@
       <module name="course" target="17" />
       <module name="EAD" target="1.5" />
       <module name="ead-course" target="17" />
-      <module name="notification" target="11" />
+      <module name="notification" target="17" />
       <module name="service-registry" target="17" />
     </bytecodeTargetLevel>
   </component>

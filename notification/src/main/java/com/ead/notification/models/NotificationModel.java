@@ -1,0 +1,36 @@
+package com.ead.notification.models;
+
+import com.ead.notification.enums.NotificationStatus;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import jdk.jfr.DataAmount;
+import lombok.Data;
+
+import javax.persistence.*;
+import java.time.LocalDateTime;
+import java.util.UUID;
+
+@Data
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@Entity
+@Table(name = "TB_NOTIFICATION")
+public class NotificationModel {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private UUID notificationId;
+    @Column(nullable = false)
+    private UUID userId;
+    @Column(nullable = false, length = 150)
+    private String title;
+    @Column(nullable = false)
+    private String message;
+    @Column(nullable = false)
+    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
+    private LocalDateTime creationDate;
+    @Column(nullable = false)
+    @Enumerated(EnumType.STRING)
+    private NotificationStatus notificationStatus;
+
+
+}
