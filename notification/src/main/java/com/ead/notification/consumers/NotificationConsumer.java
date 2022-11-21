@@ -26,10 +26,10 @@ public class NotificationConsumer {
     public NotificationConsumer(NotificationService notificationService) {
         this.notificationService = notificationService;
     }
-    @Bean
-    public Jackson2JsonMessageConverter converter() {
-        return new Jackson2JsonMessageConverter();
-    }
+//    @Bean
+//    public Jackson2JsonMessageConverter converter() {
+//        return new Jackson2JsonMessageConverter();
+//    }
 
     @RabbitListener(bindings = @QueueBinding(
             value = @Queue(value = "${ead.broker.queue.notificationCommandQueue.name}", durable = "true"),
