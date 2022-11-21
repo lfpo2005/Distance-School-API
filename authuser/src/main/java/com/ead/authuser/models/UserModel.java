@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
+import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.beans.BeanUtils;
 import org.springframework.hateoas.RepresentationModel;
 
@@ -43,14 +44,15 @@ public class UserModel extends RepresentationModel<UserModel> implements Seriali
     @Column(length = 20)
     private String phoneNumber;
     @Column(nullable = false, unique = true, length = 20)
+    @CPF(message="cpf invalid, default is 000.000.000-00")
     private String cpf;
     @Column
     private String imageUrl;
     @Column(nullable = false)
-    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
     private LocalDateTime creationDate;
     @Column(nullable = false)
-    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
     private LocalDateTime lastUpdateDate;
 
     public UserEventDto convertToUserEventDto(){
@@ -60,5 +62,4 @@ public class UserModel extends RepresentationModel<UserModel> implements Seriali
         userEventDto.setUserStatus(this.getUserStatus().toString());
         return userEventDto;
     }
-
 }
