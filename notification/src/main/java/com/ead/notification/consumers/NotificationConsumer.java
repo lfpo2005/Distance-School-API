@@ -9,7 +9,9 @@ import org.springframework.amqp.rabbit.annotation.Exchange;
 import org.springframework.amqp.rabbit.annotation.Queue;
 import org.springframework.amqp.rabbit.annotation.QueueBinding;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.beans.BeanUtils;
+import org.springframework.context.annotation.Bean;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
 
@@ -24,18 +26,22 @@ public class NotificationConsumer {
     public NotificationConsumer(NotificationService notificationService) {
         this.notificationService = notificationService;
     }
+    @Bean
+    public Jackson2JsonMessageConverter converter() {
+        return new Jackson2JsonMessageConverter();
+    }
 
     @RabbitListener(bindings = @QueueBinding(
             value = @Queue(value = "${ead.broker.queue.notificationCommandQueue.name}", durable = "true"),
             exchange = @Exchange(value = "${ead.broker.exchange.notificationCommandExchange}", type = ExchangeTypes.TOPIC, ignoreDeclarationExceptions = "true"),
-            key = "ms.notification")
+            key = "${ead.broker.key.notificationCommandKey}")
     )
-    public void listen (@Payload NotificationCommandDto notificationCommandDto){
+    public void listen(@Payload NotificationCommandDto notificationCommandDto) {
         var notificationModel = new NotificationModel();
         BeanUtils.copyProperties(notificationCommandDto, notificationModel);
         notificationModel.setCreationDate(LocalDateTime.now(ZoneId.of("UTC")));
         notificationModel.setNotificationStatus(NotificationStatus.CREATED);
         notificationService.saveNotification(notificationModel);
-
     }
+
 }

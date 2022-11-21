@@ -13,7 +13,7 @@ import java.util.UUID;
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Entity
-@Table(name = "TB_NOTIFICATION")
+@Table(name = "TB_NOTIFICATIONS")
 public class NotificationModel {
 
     @Id
