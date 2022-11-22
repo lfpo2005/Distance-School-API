@@ -62,4 +62,4 @@ public class CourseUserController {
         courseService.saveSubscriptionUserInCourseAndSendNotification(courseModelOptional.get(), userModelOptional.get());
         return ResponseEntity.status(HttpStatus.CREATED).body("Subscription created successfully.");
     }
-} //todo: 20:00 min
+}

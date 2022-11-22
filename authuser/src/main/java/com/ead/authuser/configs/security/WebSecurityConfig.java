@@ -17,7 +17,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     public static final String[] AUTH_WHITELIST = {
-            "ead-authuser/auth/**"
+            "/auth/**"
     };
 
     @Override
