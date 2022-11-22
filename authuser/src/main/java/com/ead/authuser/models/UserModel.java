@@ -6,13 +6,18 @@ import com.ead.authuser.enums.UserType;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
+import org.hibernate.validator.constraints.br.CPF;
 import org.springframework.beans.BeanUtils;
 import org.springframework.hateoas.RepresentationModel;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.UUID;
 
 @Data
@@ -43,22 +48,29 @@ public class UserModel extends RepresentationModel<UserModel> implements Seriali
     @Column(length = 20)
     private String phoneNumber;
     @Column(nullable = false, unique = true, length = 20)
+    @CPF(message="cpf invalid, default is 000.000.000-00")
     private String cpf;
     @Column
     private String imageUrl;
     @Column(nullable = false)
-    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
     private LocalDateTime creationDate;
     @Column(nullable = false)
-    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
     private LocalDateTime lastUpdateDate;
 
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "TB_USERS_ROLES",
+    joinColumns = @JoinColumn(name = "user_id"),
+    inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private Set<RoleModel> roles = new HashSet<>();
+
     public UserEventDto convertToUserEventDto(){
-        var userEventDto = new UserEventDto();
+       var userEventDto = new UserEventDto();
         BeanUtils.copyProperties(this, userEventDto);
         userEventDto.setUserType(this.getUserType().toString());
         userEventDto.setUserStatus(this.getUserStatus().toString());
         return userEventDto;
     }
-
 }

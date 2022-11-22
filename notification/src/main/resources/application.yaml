@@ -1,23 +1,11 @@
-server:
-  port: 8081
-
 spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/ead-notification
-    username: postgres
-    password: admin
-  jpa:
-    hibernate:
-      ddl-auto: update
-      dialect: org.hibernate.dialect.PostgreSQLDialect
-      jdbc:
-        lob.non-contextual-creation: true
-    properties:
-      hibernate:
-        show_sql: true
-
-
-
-
-
-
+  application:
+    name: ead-notification-service
+  config:
+    import: 'configserver:'
+  cloud:
+    config:
+      discovery:
+        service-id: ead-config-server
+      username: configServer
+      password: 'ead123cs'
