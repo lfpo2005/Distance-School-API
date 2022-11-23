@@ -43,7 +43,7 @@ public class CourseValidator  implements Validator {
         }
     }
 
-    private void validateUserInstructor(UUID userInstructor, Errors errors){
+    private void validateUserInstructor(UUID userInstructor, Errors errors) {
         UUID currentUserId = authenticationCurrentUserService.getCurrentUser().getUserId();
         if(currentUserId.equals(userInstructor)) {
             Optional<UserModel> userModelOptional = userService.findById(userInstructor);
