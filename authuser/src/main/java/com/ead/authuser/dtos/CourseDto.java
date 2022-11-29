@@ -4,7 +4,6 @@ import com.ead.authuser.enums.CourseLevel;
 import com.ead.authuser.enums.CourseStatus;
 import lombok.Data;
 
-import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data

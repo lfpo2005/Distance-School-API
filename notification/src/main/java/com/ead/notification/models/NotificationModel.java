@@ -3,7 +3,6 @@ package com.ead.notification.models;
 import com.ead.notification.enums.NotificationStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import jdk.jfr.DataAmount;
 import lombok.Data;
 
 import javax.persistence.*;
